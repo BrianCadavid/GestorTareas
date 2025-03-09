@@ -171,6 +171,7 @@ namespace GestorTareas
                 // Habilitar el botón "Guardar Cambios"
                 btnGuardarCambios.Visible = true;
                 btnGuardarCambios.Enabled = true;
+                btnAgregar.Enabled = false; // Deshabilitar Agregar
             }
             else
             {
@@ -273,6 +274,7 @@ namespace GestorTareas
                 // Ocultar el botón "Guardar Cambios"
                 btnGuardarCambios.Visible = false;
                 btnGuardarCambios.Enabled = false;
+                btnAgregar.Enabled = true; // habilitar Agregar
 
                 // Limpiar campos y resetear variable
                 categoriaIdSeleccionada = -1;

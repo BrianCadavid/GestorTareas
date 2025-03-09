@@ -73,6 +73,7 @@
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(217, 27);
             this.txtTitulo.TabIndex = 1;
+            this.txtTitulo.TextChanged += new System.EventHandler(this.txtTitulo_TextChanged);
             // 
             // txtDescripcion
             // 

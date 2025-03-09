@@ -185,6 +185,8 @@ namespace GestorTareas
                     MessageBox.Show("Tarea guardada correctamente.");
                 }
                 LoadTareas();
+                txtTitulo.Clear();
+                txtDescripcion.Clear();
             }
             catch (Exception ex)
             {
@@ -439,6 +441,11 @@ namespace GestorTareas
 
             // Cerrar solo TareasForm
             this.Close();
+        }
+
+        private void txtTitulo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 

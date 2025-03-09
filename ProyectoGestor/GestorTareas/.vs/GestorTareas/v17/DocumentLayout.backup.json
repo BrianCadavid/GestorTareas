@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|c:\\users\\brian cadavid\\desktop\\gestor de tareas\\proyectogestor\\gestortareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\tareasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|c:\\users\\brian cadavid\\desktop\\gestor de tareas\\proyectogestor\\gestortareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,8 +38,7 @@
               "RelativeToolTip": "GestorTareas\\TareasForm.cs",
               "ViewState": "AgIAAKUBAAAAAAAAAAAAAMYBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T22:08:28.502Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-09T22:08:28.502Z"
             },
             {
               "$type": "Document",
@@ -49,7 +48,7 @@
               "RelativeDocumentMoniker": "GestorTareas\\CategoriasForm.cs",
               "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs",
               "RelativeToolTip": "GestorTareas\\CategoriasForm.cs",
-              "ViewState": "AgIAAJwAAAAAAAAAAAAkwK0AAABDAAAAAAAAAA==",
+              "ViewState": "AgIAABQBAAAAAAAAAAAcwBkBAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-09T15:49:32.567Z",
               "EditorCaption": ""
@@ -63,8 +62,7 @@
               "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "GestorTareas\\CategoriasForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T21:39:32.968Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-03-08T21:39:32.968Z"
             }
           ]
         }

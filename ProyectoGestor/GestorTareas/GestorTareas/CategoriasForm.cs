@@ -257,7 +257,12 @@ namespace GestorTareas
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "UPDATE Categorias SET nombre = @nombre, descripcion = @descripcion WHERE id = @id";
+                    string query = @"UPDATE Categorias 
+                             SET nombre = @nombre, 
+                                 descripcion = @descripcion, 
+                                 fechaCreacion = GETDATE() 
+                             WHERE id = @id";
+
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
                     cmd.Parameters.AddWithValue("@descripcion", nuevaDescripcion);
@@ -274,7 +279,7 @@ namespace GestorTareas
                 // Ocultar el botón "Guardar Cambios"
                 btnGuardarCambios.Visible = false;
                 btnGuardarCambios.Enabled = false;
-                btnAgregar.Enabled = true; // habilitar Agregar
+                btnAgregar.Enabled = true;
 
                 // Limpiar campos y resetear variable
                 categoriaIdSeleccionada = -1;

@@ -30,7 +30,7 @@ namespace GestorTareas
         }
 
       
-        /// <summary>
+        // <summary>
         /// Identificador de la categoría seleccionada para edición.
         /// </summary>
         private int categoriaIdSeleccionada = -1; // ID de la categoría en edición
@@ -167,6 +167,10 @@ namespace GestorTareas
                 categoriaIdSeleccionada = Convert.ToInt32(dtgCategorias.CurrentRow.Cells["id"].Value);
                 txtNombre.Text = dtgCategorias.CurrentRow.Cells["nombre"].Value.ToString();
                 txtDescripcion.Text = dtgCategorias.CurrentRow.Cells["descripcion"].Value.ToString();
+
+                // Habilitar el botón "Guardar Cambios"
+                btnGuardarCambios.Visible = true;
+                btnGuardarCambios.Enabled = true;
             }
             else
             {
@@ -237,6 +241,16 @@ namespace GestorTareas
                 return;
             }
 
+            string nuevoNombre = txtNombre.Text.Trim();
+            string nuevaDescripcion = txtDescripcion.Text.Trim();
+
+            // Validar que los campos no estén vacíos
+            if (string.IsNullOrEmpty(nuevoNombre) || string.IsNullOrEmpty(nuevaDescripcion))
+            {
+                MessageBox.Show("Los campos Nombre y Descripción no pueden estar vacíos.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
                 using (SqlConnection conn = new SqlConnection(connectionString))
@@ -244,8 +258,8 @@ namespace GestorTareas
                     conn.Open();
                     string query = "UPDATE Categorias SET nombre = @nombre, descripcion = @descripcion WHERE id = @id";
                     SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@nombre", txtNombre.Text.Trim());
-                    cmd.Parameters.AddWithValue("@descripcion", txtDescripcion.Text.Trim());
+                    cmd.Parameters.AddWithValue("@nombre", nuevoNombre);
+                    cmd.Parameters.AddWithValue("@descripcion", nuevaDescripcion);
                     cmd.Parameters.AddWithValue("@id", categoriaIdSeleccionada);
                     cmd.ExecuteNonQuery();
                 }
@@ -255,6 +269,10 @@ namespace GestorTareas
                 // Recargar la tabla y actualizar ComboBox en TareasForm
                 LoadCategorias();
                 ActualizarCategoriasEnTareasForm();
+
+                // Ocultar el botón "Guardar Cambios"
+                btnGuardarCambios.Visible = false;
+                btnGuardarCambios.Enabled = false;
 
                 // Limpiar campos y resetear variable
                 categoriaIdSeleccionada = -1;

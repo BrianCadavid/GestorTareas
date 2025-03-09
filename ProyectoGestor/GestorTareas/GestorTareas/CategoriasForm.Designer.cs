@@ -165,6 +165,7 @@
             this.btnGuardarCambios.TabIndex = 9;
             this.btnGuardarCambios.Text = "Guardar Cambio";
             this.btnGuardarCambios.UseVisualStyleBackColor = false;
+            this.btnGuardarCambios.Visible = false;
             this.btnGuardarCambios.Click += new System.EventHandler(this.btnGuardarCambios_Click);
             // 
             // btnSalirCateg

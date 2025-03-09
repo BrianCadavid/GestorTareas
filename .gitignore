@@ -1,0 +1,7 @@
+bin/
+obj/
+*.user
+*.suo
+*.log
+.vscode/
+node_modules/

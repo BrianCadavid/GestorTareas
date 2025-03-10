@@ -136,7 +136,7 @@ namespace GestorTareas
                 using (SqlConnection conn = new SqlConnection(connectionString))
                 {
                     conn.Open();
-                    string query = "INSERT INTO Categorias (nombre, descripcion) VALUES (@nombre, @descripcion)";
+                    string query = "INSERT INTO Categorias (nombre, descripcion, fechaCreacion) VALUES (@nombre, @descripcion, GETDATE())";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.Parameters.AddWithValue("@nombre", nombre);
                     cmd.Parameters.AddWithValue("@descripcion", descripcion);

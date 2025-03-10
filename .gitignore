@@ -1,7 +1,54 @@
+# Visual Studio archivos de usuario
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build y binarios
 bin/
 obj/
-*.user
-*.suo
+Debug/
+Release/
+
+# Paquetes NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+*.nuspec
+
+# Archivos de configuración local
+appsettings.json
+appsettings.Development.json
+
+# Publicaciones
+publish/
+out/
+
+# Archivos temporales de depuración
+*.pdb
 *.log
-.vscode/
-node_modules/
+*.tlog
+*.cache
+*.csproj.user
+
+# Archivos de dependencias de Visual Studio
+*.vsp
+*.vspx
+*.vsdx
+*.dll
+*.exe
+
+# Archivos de configuración y bases de datos locales
+*.mdf
+*.ldf
+*.sqlite
+*.bak
+
+# Configuración de JetBrains Rider / Resharper
+.idea/
+*.DotSettings.user
+
+# Configuración de Azure
+azure-pipelines.yml

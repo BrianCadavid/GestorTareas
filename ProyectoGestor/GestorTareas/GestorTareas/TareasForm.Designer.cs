@@ -53,14 +53,16 @@
             this.btnCategorias = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCerrarSesion = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgTareas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(29, 5);
+            this.lblTitulo.Location = new System.Drawing.Point(28, 10);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(69, 23);
             this.lblTitulo.TabIndex = 0;
@@ -69,7 +71,7 @@
             // txtTitulo
             // 
             this.txtTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.txtTitulo.Location = new System.Drawing.Point(32, 34);
+            this.txtTitulo.Location = new System.Drawing.Point(32, 39);
             this.txtTitulo.Name = "txtTitulo";
             this.txtTitulo.Size = new System.Drawing.Size(217, 27);
             this.txtTitulo.TabIndex = 1;
@@ -78,7 +80,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.txtDescripcion.Location = new System.Drawing.Point(32, 112);
+            this.txtDescripcion.Location = new System.Drawing.Point(32, 107);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(217, 27);
             this.txtDescripcion.TabIndex = 2;
@@ -87,7 +89,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(29, 86);
+            this.lblDescripcion.Location = new System.Drawing.Point(29, 81);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(131, 23);
             this.lblDescripcion.TabIndex = 3;
@@ -103,7 +105,7 @@
             "3",
             "4",
             "5"});
-            this.cmbCategoria.Location = new System.Drawing.Point(310, 34);
+            this.cmbCategoria.Location = new System.Drawing.Point(310, 39);
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(239, 28);
             this.cmbCategoria.TabIndex = 4;
@@ -116,7 +118,7 @@
             this.cmbEstado.Items.AddRange(new object[] {
             "1",
             "0"});
-            this.cmbEstado.Location = new System.Drawing.Point(310, 112);
+            this.cmbEstado.Location = new System.Drawing.Point(310, 107);
             this.cmbEstado.Name = "cmbEstado";
             this.cmbEstado.Size = new System.Drawing.Size(239, 28);
             this.cmbEstado.TabIndex = 5;
@@ -125,7 +127,7 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(306, 5);
+            this.lblCategoria.Location = new System.Drawing.Point(306, 10);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(242, 23);
             this.lblCategoria.TabIndex = 6;
@@ -135,7 +137,7 @@
             // 
             this.lblEstado.AutoSize = true;
             this.lblEstado.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstado.Location = new System.Drawing.Point(316, 86);
+            this.lblEstado.Location = new System.Drawing.Point(306, 81);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(78, 23);
             this.lblEstado.TabIndex = 7;
@@ -224,20 +226,20 @@
             this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.Info;
             this.dateTimePicker1.CalendarTitleBackColor = System.Drawing.Color.LightCoral;
             this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.Desktop;
-            this.dateTimePicker1.Location = new System.Drawing.Point(904, 34);
+            this.dateTimePicker1.Location = new System.Drawing.Point(578, 39);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(261, 22);
+            this.dateTimePicker1.Size = new System.Drawing.Size(276, 22);
             this.dateTimePicker1.TabIndex = 9;
             // 
             // btnEditar
             // 
             this.btnEditar.BackColor = System.Drawing.Color.Wheat;
             this.btnEditar.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(605, 112);
+            this.btnEditar.Location = new System.Drawing.Point(32, 217);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(257, 38);
             this.btnEditar.TabIndex = 11;
-            this.btnEditar.Text = "Editar";
+            this.btnEditar.Text = "Editar Tarea";
             this.btnEditar.UseVisualStyleBackColor = false;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
@@ -245,7 +247,7 @@
             // 
             this.btnEliminar.BackColor = System.Drawing.Color.Red;
             this.btnEliminar.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(605, 197);
+            this.btnEliminar.Location = new System.Drawing.Point(32, 485);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(257, 38);
             this.btnEliminar.TabIndex = 12;
@@ -257,9 +259,9 @@
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.GreenYellow;
             this.btnAgregar.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(33, 197);
+            this.btnAgregar.Location = new System.Drawing.Point(33, 162);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(515, 38);
+            this.btnAgregar.Size = new System.Drawing.Size(516, 38);
             this.btnAgregar.TabIndex = 10;
             this.btnAgregar.Text = "Agregar Tarea";
             this.btnAgregar.UseVisualStyleBackColor = false;
@@ -269,7 +271,7 @@
             // 
             this.btnCategorias.BackColor = System.Drawing.Color.Orange;
             this.btnCategorias.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCategorias.Location = new System.Drawing.Point(605, 34);
+            this.btnCategorias.Location = new System.Drawing.Point(295, 217);
             this.btnCategorias.Name = "btnCategorias";
             this.btnCategorias.Size = new System.Drawing.Size(257, 38);
             this.btnCategorias.TabIndex = 13;
@@ -294,7 +296,7 @@
             // 
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Red;
             this.btnCerrarSesion.Font = new System.Drawing.Font("Lucida Bright", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCerrarSesion.Location = new System.Drawing.Point(889, 197);
+            this.btnCerrarSesion.Location = new System.Drawing.Point(889, 485);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(257, 38);
             this.btnCerrarSesion.TabIndex = 16;
@@ -302,12 +304,23 @@
             this.btnCerrarSesion.UseVisualStyleBackColor = false;
             this.btnCerrarSesion.Click += new System.EventHandler(this.btnCerrarSesion_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GestorTareas.Properties.Resources.tareas_diarias2;
+            this.pictureBox1.Location = new System.Drawing.Point(889, 10);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(256, 256);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
             // TareasForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1177, 546);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCerrarSesion);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnCategorias);
@@ -330,6 +343,7 @@
             this.Text = "TareasForm";
             this.Load += new System.EventHandler(this.TareasForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgTareas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -361,5 +375,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaVencimiento;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCerrarSesion;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

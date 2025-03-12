@@ -121,4 +121,13 @@
   <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unnamed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="tareas-diarias1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tareas-diarias1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tareas-diarias" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tareas-diarias.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tareas-diarias2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tareas-diarias2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

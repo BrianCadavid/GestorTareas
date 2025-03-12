@@ -63,6 +63,36 @@ namespace GestorTareas.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap tareas_diarias {
+            get {
+                object obj = ResourceManager.GetObject("tareas-diarias", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tareas_diarias1 {
+            get {
+                object obj = ResourceManager.GetObject("tareas-diarias1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tareas_diarias2 {
+            get {
+                object obj = ResourceManager.GetObject("tareas-diarias2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap unnamed {
             get {
                 object obj = ResourceManager.GetObject("unnamed", resourceCulture);

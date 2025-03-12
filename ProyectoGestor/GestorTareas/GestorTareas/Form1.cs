@@ -19,6 +19,13 @@ namespace GestorTareas
         public frmLogin()
         {
             InitializeComponent();
+            // Permitir que el formulario capture teclas antes de los controles
+            this.KeyPreview = true;
+            this.KeyDown += new KeyEventHandler(frmLogin_KeyDown);
+
+            // Agregar eventos KeyDown a los TextBox
+            txtUsuario.KeyDown += new KeyEventHandler(txtUsuario_KeyDown);
+            txtContrasena.KeyDown += new KeyEventHandler(txtContrasena_KeyDown);
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
@@ -69,6 +76,31 @@ namespace GestorTareas
         private void btnSalirApp_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+        // Evento para capturar Enter en todo el formulario
+        private void frmLogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIngresar.PerformClick();
+            }
+        }
+
+        // Evento para capturar Enter en los TextBox
+        private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIngresar.PerformClick();
+            }
+        }
+
+        private void txtContrasena_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnIngresar.PerformClick();
+            }
         }
     }
 }

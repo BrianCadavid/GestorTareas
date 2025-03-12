@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|c:\\users\\brian cadavid\\desktop\\gestor de tareas\\proyectogestor\\gestortareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\categoriasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\gestortareas\\tareasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\tareasform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|c:\\users\\brian cadavid\\desktop\\gestor de tareas\\proyectogestor\\gestortareas\\gestortareas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B86C5450-08E9-4E5F-BF1B-CE90CE9109A4}|GestorTareas\\GestorTareas.csproj|solutionrelative:gestortareas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,39 +22,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TareasForm.cs",
-              "DocumentMoniker": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\TareasForm.cs",
-              "RelativeDocumentMoniker": "GestorTareas\\TareasForm.cs",
-              "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\TareasForm.cs",
-              "RelativeToolTip": "GestorTareas\\TareasForm.cs",
-              "ViewState": "AgIAAKUBAAAAAAAAAAAAAMYBAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T22:08:28.502Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CategoriasForm.cs",
-              "DocumentMoniker": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs",
-              "RelativeDocumentMoniker": "GestorTareas\\CategoriasForm.cs",
-              "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs",
-              "RelativeToolTip": "GestorTareas\\CategoriasForm.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAswIoAAACLAAAAAAAAAA==",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\Form1.cs",
+              "RelativeDocumentMoniker": "GestorTareas\\Form1.cs",
+              "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\Form1.cs",
+              "RelativeToolTip": "GestorTareas\\Form1.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAiwGcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-09T15:49:32.567Z",
+              "WhenOpened": "2025-03-12T03:08:10.878Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriasForm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs",
-              "RelativeDocumentMoniker": "GestorTareas\\CategoriasForm.cs",
-              "ToolTip": "C:\\Users\\Brian Cadavid\\Desktop\\Gestor de Tareas\\ProyectoGestor\\GestorTareas\\GestorTareas\\CategoriasForm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "GestorTareas\\CategoriasForm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-08T21:39:32.968Z"
             }
           ]
         }

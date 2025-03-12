@@ -134,5 +134,14 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tareas-diarias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tareas-diarias1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tareas-diarias2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

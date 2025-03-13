@@ -23,6 +23,6 @@ El sistema maneja las siguientes tablas:
 - .NET Framework
 
 ###  Pasos para ejecutar
-1. Clona el repositorio:
+ Clona el repositorio:
    
-   git clone https://github.com/BrianCadavid/GestorTareas.git
+ git clone https://github.com/BrianCadavid/GestorTareas.git

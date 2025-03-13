@@ -92,6 +92,7 @@ namespace GestorTareas
         /// <param name="y">Posición Y del icono.</param>
         /// <returns>Un Label con un icono de emoji.</returns>
 
+
         private Label CrearIcono(int x, int y)
         {
             Label icono = new Label();

@@ -11,11 +11,20 @@ using System.Windows.Forms;
 
 namespace GestorTareas
 {
+    /// <summary>
+    /// Formulario de inicio de sesión para la aplicación Gestor de Tareas.
+    /// </summary>
     public partial class frmLogin: Form
     {
+        /// <summary>
+        /// Cadena de conexión a la base de datos SQL Server.
+        /// </summary>
         private string connectionString = "Server=(local)\\SQLEXPRESS;Database=TareasDB1;Integrated Security=True;";
 
-
+        /// <summary>
+        /// Constructor de la clase frmLogin.
+        /// Inicializa los componentes y configura eventos clave.
+        /// </summary>
         public frmLogin()
         {
             InitializeComponent();
@@ -32,12 +41,19 @@ namespace GestorTareas
         {
 
         }
+        /// <summary>
+        /// Limpia los campos de entrada del formulario.
+        /// </summary>
         public void LimpiarCampos()
         {
             txtUsuario.Text = "";
             txtContrasena.Text = "";
         }
 
+        /// <summary>
+        /// Evento que maneja el clic en el botón de ingresar.
+        /// Valida las credenciales del usuario en la base de datos.
+        /// </summary>
         private void btnIngresar_Click(object sender, EventArgs e)
         {
             string nombreUsuario = txtUsuario.Text;
@@ -73,6 +89,10 @@ namespace GestorTareas
             }
         }
 
+        /// <summary>
+        /// Evento que maneja el clic en el botón de salir.
+        /// Cierra la aplicación.
+        /// </summary>
         private void btnSalirApp_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -86,7 +106,10 @@ namespace GestorTareas
             }
         }
 
-        // Evento para capturar Enter en los TextBox
+        /// <summary>
+        /// Evento que captura la tecla Enter en todo el formulario.
+        /// Si se presiona Enter, se ejecuta el botón de ingresar.
+        /// </summary>
         private void txtUsuario_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)
@@ -95,6 +118,10 @@ namespace GestorTareas
             }
         }
 
+        /// <summary>
+        /// Evento que captura la tecla Enter en el campo de contraseña.
+        /// Si se presiona Enter, se ejecuta el botón de ingresar.
+        /// </summary>
         private void txtContrasena_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

@@ -12,11 +12,19 @@ using System.Windows.Forms;
 
 namespace GestorTareas
 {
+    /// <summary>
+    /// Formulario para gestionar las tareas.
+    /// </summary>
     public partial class TareasForm: Form
     {
-
+        /// <summary>
+        /// Cadena de conexión a la base de datos.
+        /// </summary>
         private string connectionString = "Server=(local)\\SQLEXPRESS;Database=TareasDB1;Integrated Security=True;";
 
+        /// <summary>
+        /// Constructor de la clase TareasForm.
+        /// </summary>
         public TareasForm()
         {
             InitializeComponent();
@@ -25,14 +33,20 @@ namespace GestorTareas
             dtgTareas.AllowUserToAddRows = false; // Evita que se agregue una fila en blanco automáticamente
             dtgTareas.DataError += (s, e) => { e.Cancel = true; }; // Previene errores de validación
             dtgTareas.CellValidating += dtgTareas_CellValidating;
-
-
         }
+
+        /// <summary>
+        /// Maneja el evento de cierre del formulario para finalizar la edición y validaciones.
+        /// </summary>
         private void TareasForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            dtgTareas.EndEdit();  // Finaliza la edición antes de cerrar
-            this.Validate();       // Evita validaciones pendientes
+            dtgTareas.EndEdit();  
+            this.Validate();      
         }
+
+        /// <summary>
+        /// Configura las columnas del DataGridView.
+        /// </summary>
         private void ConfigurarDataGridView()
         {
             dtgTareas.Columns.Clear();
@@ -59,7 +73,9 @@ namespace GestorTareas
             dtgTareas.Columns["colFechaVencimiento"].DefaultCellStyle.Format = "dd/MM/yyyy";
         }
 
-
+        /// <summary>
+        /// Carga los datos iniciales de tareas, categorías y estados.
+        /// </summary>
         private void CargarDatosIniciales()
         {
             try
@@ -75,7 +91,9 @@ namespace GestorTareas
 
             }
         }
-
+        /// <summary>
+        /// Carga las tareas desde la base de datos y las muestra en el DataGridView.
+        /// </summary>
         private void LoadTareas()
         {
             try
@@ -96,7 +114,7 @@ namespace GestorTareas
             FROM Tareas T 
             INNER JOIN Categorias C ON T.categoriaId = C.ID 
             INNER JOIN Estados E ON T.estadoId = E.ID
-            INNER JOIN Usuarios U ON T.usuarioId = U.ID"; // 🔹 Unimos con Usuarios
+            INNER JOIN Usuarios U ON T.usuarioId = U.ID"; 
 
                     SqlDataAdapter da = new SqlDataAdapter(query, conn);
                     System.Data.DataTable dt = new System.Data.DataTable();
@@ -110,7 +128,9 @@ namespace GestorTareas
             }
         }
 
-
+        /// <summary>
+        /// Carga las categorías desde la base de datos y las asigna al ComboBox.
+        /// </summary>
         public void LoadCategorias()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -126,7 +146,9 @@ namespace GestorTareas
                 cmbCategoria.ValueMember = "id";
             }
         }
-
+        /// <summary>
+        /// Carga los estados desde la base de datos y los asigna al ComboBox.
+        /// </summary>
         private void LoadEstados()
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
@@ -146,7 +168,9 @@ namespace GestorTareas
         {
             
         }
-
+        /// <summary>
+        /// Agrega una nueva tarea a la base de datos.
+        /// </summary>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             string titulo = txtTitulo.Text.Trim();
@@ -160,10 +184,10 @@ namespace GestorTareas
             }
 
             int categoriaId = (int)cmbCategoria.SelectedValue;
-            int usuarioId = 1; // ⚠️ Si usas login, cambia esto por el ID del usuario autenticado
+            int usuarioId = 1; 
             int estadoId = (int)cmbEstado.SelectedValue;
             DateTime fechaVencimiento = dateTimePicker1.Value;
-            DateTime fechaCreacion = DateTime.Now; // 🔹 Guardamos la fecha actual
+            DateTime fechaCreacion = DateTime.Now; 
 
             try
             {
@@ -447,8 +471,9 @@ namespace GestorTareas
         {
 
         }
+       
 
-   
+
     }
 
 
